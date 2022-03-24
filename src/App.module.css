@@ -19,10 +19,6 @@ body {
     margin-right: 40px;
 }
 
-.container .rightSide {
-    flex: 1;
-    margin-left: 40px;
-}
 
 .container .leftSide h1 {
     margin: 0;
@@ -60,4 +56,41 @@ body {
 .container .leftSide button:hover {
     opacity: 0.9;
     transition: all ease .3s;
+}
+    
+.container .rightSide {
+    flex: 1;
+    margin-left: 40px;
+    display: flex;
+}
+
+.container .rightSide .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container .rightSide .rightBig {
+    flex: 1;
+    display: flex;
+}
+
+.container .rightSide .rightArrow {
+    position: absolute;
+    background-color: #227c9d;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 145px;
+    transition: all ease .3s;
+}
+
+.container .rightSide .rightArrow:hover {
+    opacity: .8;
 }
